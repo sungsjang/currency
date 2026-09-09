@@ -1,0 +1,14 @@
+{
+  "regions": ["icn1"],
+  "headers": [
+    {
+      "source": "/api/rates",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "s-maxage=30, stale-while-revalidate=300"
+        }
+      ]
+    }
+  ]
+}
