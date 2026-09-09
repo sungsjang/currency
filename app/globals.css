@@ -1,0 +1,40 @@
+:root {
+  color-scheme: light;
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #172033;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --blue: #2563eb;
+  --green: #16a34a;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: "Malgun Gothic", "Apple SD Gothic Neo", Arial, sans-serif; }
+a { color: var(--blue); word-break: break-all; }
+button { border: 0; border-radius: 999px; background: #0f172a; color: white; cursor: pointer; font-weight: 700; padding: 10px 16px; }
+button:disabled { cursor: wait; opacity: 0.65; }
+.page { margin: 0 auto; max-width: 1180px; padding: 28px 18px 60px; }
+.hero { align-items: stretch; display: grid; gap: 18px; grid-template-columns: minmax(0, 1fr) 280px; margin-bottom: 20px; }
+.hero h1 { font-size: clamp(30px, 5vw, 52px); letter-spacing: -0.04em; line-height: 1.05; margin: 6px 0 12px; }
+.hero p { color: var(--muted); line-height: 1.6; margin: 0; }
+.eyebrow { color: var(--blue) !important; font-size: 13px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; }
+.hero-card, .card { background: var(--card); border: 1px solid var(--border); border-radius: 18px; box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04); }
+.hero-card { display: flex; flex-direction: column; gap: 12px; justify-content: space-between; padding: 18px; }
+.hero-card div { font-size: 26px; font-weight: 900; }
+.hero-card span, .muted { color: var(--muted); font-size: 13px; }
+.grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.section { margin-top: 28px; }
+.section h2 { font-size: 21px; letter-spacing: -0.02em; margin: 0 0 12px; }
+.card { padding: 16px; }
+.card h2, .card h3 { margin: 0 0 10px; }
+.card p { line-height: 1.55; margin: 8px 0; }
+.big { font-size: 30px; font-weight: 900; letter-spacing: -0.03em; margin: 6px 0 10px; }
+.decision.buy { background: #eff6ff; border-color: #93c5fd; }
+.decision.sell { background: #f0fdf4; border-color: #86efac; }
+.decision.watch { background: #fffbeb; border-color: #fde68a; }
+.decision.hold { background: #f8fafc; }
+.chart-card { overflow: hidden; }
+.chart { display: block; height: auto; margin-top: 10px; width: 100%; }
+.notice, .empty { background: #fff7ed; border: 1px solid #fed7aa; border-radius: 14px; padding: 14px; }
+.disclaimer { color: var(--muted); font-size: 12px; line-height: 1.7; margin-top: 24px; }
+@media (max-width: 760px) { .hero { grid-template-columns: 1fr; } }
